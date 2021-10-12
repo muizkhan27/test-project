@@ -74,3 +74,23 @@ From the `backend` directory, run the server:
 python ./manage.py runserver
 ```
 
+### Frontend (Next.js React app)
+
+#### Install Node.js, npm, and yarn
+
+1. [Download and install Node.js and npm](https://nodejs.org/en/)
+1. Install yarn, which we will use to run the Next project:
+    ```
+    npm install --global yarn
+    ```
+
+#### Run the web app
+
+1. Change into the `frontend directory`
+    ```
+    cd ./frontend
+    ```
+1. Start the app in development mode
+    ```
+    yarn dev
+    ```
