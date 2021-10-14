@@ -115,12 +115,16 @@ Note the following endpoints:
 
 ### Frontend (Next.js React app)
 
-#### Install Node.js, npm, and yarn
+#### Install Node.js, npm, yarn, and next
 
 1. [Download and install Node.js and npm](https://nodejs.org/en/)
 1. Install yarn, which we will use to run the Next project:
     ```
     npm install --global yarn
+    ```
+1. Install Next.js
+    ```
+    npm install next
     ```
 
 #### Run the web app
