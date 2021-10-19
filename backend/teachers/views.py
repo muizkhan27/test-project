@@ -14,6 +14,6 @@ class TeacherMonthInfoView(APIView):
         """
         Accepts GET request, returns month-wise teachers duration
         """
-        queryset = OnlineClass.objects.values('teacher__name', 'start__month').annotate(Sum("duration"))
+        queryset = OnlineClass.objects.values('teacher__id', 'teacher__name', 'start__month').annotate(Sum("duration"))
         serializer = TeacherMonthInfoSerializer(queryset, many=True)
         return Response(serializer.data)

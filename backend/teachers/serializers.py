@@ -13,6 +13,7 @@ class TeacherMonthInfoSerializer(serializers.Serializer):
     """
     Serializer for month-wise teachers info
     """
+    teacher__id = serializers.IntegerField()
     teacher__name = serializers.CharField(max_length=255)
     start__month = serializers.IntegerField()
     duration__sum = serializers.CharField(max_length=255)
